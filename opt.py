@@ -29,7 +29,7 @@ for P in range(start_P, end_P):
         per_HP = (2 * base_HP + 31 + 2 * ind_HP) // 2 + 60
         per_DEF = int(((2 * base_DEF + 31 + 2 * ind_DEF) // 2 + 5) * nature_DEF)
 
-        S = per_HP / ((11 * P / 25 / per_DEF) + 2)
+        S = per_HP / (int(22*P/per_DEF) // 50 + 2)
 
         if S > max_S:
             max_S = S
@@ -45,3 +45,4 @@ print("=== 최적 배분 등장 비율 ===")
 for (hp, df), count in sorted_counts:
     percentage = (count / total_P_count) * 100
     print(f"({hp}, {df}): {percentage:.1f}% 등장")
+
