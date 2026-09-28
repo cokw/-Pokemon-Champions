@@ -1,7 +1,12 @@
+## 여기서부터
+
 base_HP = 90
 base_DEF = 130
 nature_DEF = 1
 div = 40 # 1 ~ 64
+
+## 여기까지 변경
+
 
 best_counts = {}
 
